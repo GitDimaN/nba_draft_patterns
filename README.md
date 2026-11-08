@@ -27,6 +27,18 @@ We utilize combined dataset records matching college career statistics (2009-202
   - Discrete: `pick` ($1-60$)
   - Categorical Hierarchy: `Lottery_Round_1` < `Non-Lottery_Round_1` < `Round_2` < `Undrafted`
 
+* **Features/explanatory variables**:
+
+  - college statistics for each year played (scoring, rebounding, minutes played etc..) + draft pick position if drafted
+
+  - draft combine measurements of all draft combine participants:
+  
+    -- physical attributes ("anthropometric"), e.g. height, weight, body fat, wing span, hand width and length
+
+    -- physicall drill results: vertical jump STANDING_VERTICAL_LEAP, MAX_VERTICAL_LEAP, LANE_AGILITY_TIME, MODIFIED_LANE_AGILITY_TIME, THREE_QUARTER_SPRINT, BENCH_PRESS
+
+    -- shooting performance, spot up and non-stationary
+
 * **Statistical Tests & Tools**:
   - **Independent T-tests**: Comparing physical and performance attributes of drafted vs. undrafted players.
   - **One-way ANOVA**: Assessing variance across the four draft tier groupings.

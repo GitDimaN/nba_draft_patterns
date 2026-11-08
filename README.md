@@ -47,6 +47,34 @@ We utilize combined dataset records matching college career statistics (2009-202
 
 ---
 
+## Main Conclusions
+
+## 📝 Summary of Findings for the Three Research Questions
+
+### 1. Physical Attributes (H1)
+* **Results**: physical attributes like `height without shoes` ($r \approx -0.15$) and `wingspan` ($r \approx -0.14$) show mild negative correlations with draft pick number (meaning taller players with wider wingspans tend to be selected slightly earlier).  
+* **Athleticism**: T-tests comparing drafted vs. undrafted prospects show that these together with **standing vertical leap** ($t \approx 3.58$, $p < 0.001$) and **max vertical leap** ($t \approx 2.92$, $p \approx 0.003$) are highly significant discriminators of draft status. 
+* **Verdict**: Physical profile and explosiveness are statistically significant predictors, though actual selection number within the draft has high variance and linear impact isn't large
+
+### 2. College Performance (H2)
+* **Results**: Box-score metrics like points, rebounds, assists, and defensive metrics differ drastically between drafted and undrafted players ($p < 0.0001$). The ANOVA across draft rounds confirms that performance levels are highly tiered.
+* **Key Indicators**: Recruiting rank (`Rec Rank`) and scoring efficiency (`TS_per`, `twoP_per`) display some of the strongest linear relationships with draft position. 
+* **Verdict**: College production and elite recruiting status are highly prioritized, separating drafted prospects from undrafted ones with immense statistical significance across the metrics
+
+### 3. College Experience vs. Upside (H3)
+* **Results**: Average college years (`total_yrs`) across draft categories show a distinct negative progression:
+  - **Lottery Picks**: $1.63$ years
+  - **Non-Lottery 1st Round**: $2.10$ years
+  - **Second Round**: $2.62$ years
+  - **Undrafted**: $2.46$ years
+* **Significance**: The one-way ANOVA yielded an $F$-statistic of $33.16$ ($p \approx 2.21 \times 10^{-21}$), demonstrating highly significant differences.
+* **Verdict**: Teams aggressively prioritize youth and hypothetical long-term upside (one-and-done prospects) over extensive college experience when selecting early in the first round.
+![alt text](image.png)
+
+## Additional Remarks/Further investigations
+* **Player position dependent impact/Multivariate interplay(?)** - physical attributes might play bigger role for certain positions, e.g. Center vs PG. Further dividing the sample into these subgroups would provide better insights. Considering it's only 60 drafted players per year, better to include the more recent years into the analysis as well
+* **Threshold-based effects** - minimum requirements vs linear correlations that underestimates such step-relationships 
+
 ## Requirements & Setup
 
 Ensure you have the following libraries installed to run the analysis:
@@ -56,3 +84,4 @@ import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
 import seaborn as sns
+

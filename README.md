@@ -60,7 +60,7 @@ We utilize combined dataset records matching college career statistics (2009-202
 * **Results**: Box-score metrics like points, rebounds, assists, and defensive metrics differ drastically between drafted and undrafted players ($p < 0.0001$). The ANOVA across draft rounds confirms that performance levels are highly tiered.
 * **Key Indicators**: Recruiting rank (`Rec Rank`) and scoring efficiency (`TS_per`, `twoP_per`) display some of the strongest linear relationships with draft position. 
 * **Verdict**: College production and elite recruiting status are highly prioritized, separating drafted prospects from undrafted ones with immense statistical significance across the metrics
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 ### 3. College Experience vs. Upside (H3)
 * **Results**: Average college years (`total_yrs`) across draft categories show a distinct negative progression:
